@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#2457e6">
+  <title>Hora Certa - Analisar Medicamento</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="app-shell" id="pagina-analise">
+    <div class="app-conteudo">
+      <header class="topo-pagina">
+        <button class="botao-voltar" data-acao="voltar" type="button" aria-label="Voltar">←</button>
+        <div><p class="texto-suave texto-pequeno" style="margin:0;">Hora Certa</p><h1>Analisar medicamento</h1></div>
+        <button class="botao-sair-topo" data-acao="sair" type="button" aria-label="Sair da conta">Sair</button>
+      </header>
+
+      <section class="bloco-info">
+        <span class="tag">CONSULTA RÁPIDA</span>
+        <h2 style="margin-top:12px;">Qual medicamento você quer consultar?</h2>
+        <p class="texto-suave texto-pequeno" style="margin-bottom:0;">Digite o nome. Este projeto possui respostas demonstrativas para alguns medicamentos comuns.</p>
+      </section>
+
+      <form id="formulario-analise">
+        <div class="cartao area-campo">
+          <label for="nome-medicamento">Nome do medicamento</label>
+          <small>Medicamentos cadastrados: Dipirona, Paracetamol, Ibuprofeno, Losartana e Metformina.</small>
+          <input class="campo" id="nome-medicamento" name="medicamento" placeholder="Digite aqui..." autocomplete="off" list="medicamentos-cadastrados" required>
+          <datalist id="medicamentos-cadastrados">
+            <option value="Dipirona"></option>
+            <option value="Paracetamol"></option>
+            <option value="Ibuprofeno"></option>
+            <option value="Losartana"></option>
+            <option value="Metformina"></option>
+          </datalist>
+        </div>
+
+        <div class="cartao area-campo">
+          <label for="motivo-consulta">O que você quer saber? <span class="texto-suave" style="font-weight:500;">(opcional)</span></label>
+          <textarea class="campo-mensagem" id="motivo-consulta" placeholder="Ex.: Para que serve? Quais cuidados devo ter?"></textarea>
+        </div>
+
+        <div class="aviso-privacidade">🔒 <span>Os dados digitados ficam apenas neste navegador para fins de demonstração do projeto.</span></div>
+        <button class="botao-primario" type="submit">⌕ Ver análise</button>
+        <p class="mensagem-feedback" id="feedback-analise" aria-live="polite"></p>
+      </form>
+    </div>
+
+    <nav class="navegacao-inferior" aria-label="Navegação principal">
+      <a class="link-navegacao" href="index.html"><span class="icone-nav">⌂</span><span>Início</span></a>
+      <a class="link-navegacao ativo" href="analise.html"><span class="icone-nav">⌕</span><span>Analisar</span></a>
+      <a class="link-navegacao" href="verificar.html"><span class="icone-nav">✓</span><span>Rotina</span></a>
+      <a class="link-navegacao" href="ajuda.html"><span class="icone-nav">ⓘ</span><span>Ajuda</span></a>
+    </nav>
+  </main>
+  <script src="js/script.js"></script>
+</body>
+</html>

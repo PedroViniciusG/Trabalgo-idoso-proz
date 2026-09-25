@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#2457e6">
+  <title>Hora Certa - Resultado</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="app-shell" id="pagina-resultado">
+    <div class="app-conteudo">
+      <header class="topo-pagina">
+        <button class="botao-voltar" data-acao="voltar" type="button" aria-label="Voltar">←</button>
+        <div><p class="texto-suave texto-pequeno" style="margin:0;">Resultado da consulta</p><h1>Análise do medicamento</h1></div>
+        <button class="botao-sair-topo" data-acao="sair" type="button" aria-label="Sair da conta">Sair</button>
+      </header>
+
+      <section class="resultado-box" id="resultado-principal">
+        <div class="resultado-status">● <span id="resultado-status">Medicamento identificado</span></div>
+        <h2 id="resultado-nome">Dipirona Sódica</h2>
+        <p class="resultado-subtitulo" id="resultado-resumo">Carregando informações...</p>
+      </section>
+
+      <section aria-labelledby="titulo-informacoes">
+        <h2 id="titulo-informacoes">Informações principais</h2>
+        <div class="lista-sinais">
+          <article class="sinal">
+            <span class="icone-circular">💊</span>
+            <div><strong>Para que serve</strong><span class="texto-suave" id="resultado-serve">Carregando...</span></div>
+          </article>
+          <article class="sinal">
+            <span class="icone-circular">◷</span>
+            <div><strong>Como usar com segurança</strong><span class="texto-suave" id="resultado-uso">Carregando...</span></div>
+          </article>
+          <article class="sinal">
+            <span class="icone-circular">!</span>
+            <div><strong>Atenção</strong><span class="texto-suave" id="resultado-cuidado">Carregando...</span></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="recomendacoes">
+        <h2>Recomendações importantes</h2>
+        <ul>
+          <li>Não altere dose, horário ou duração do tratamento por conta própria.</li>
+          <li>Confira a bula da apresentação exata que você possui.</li>
+          <li>Se houver reação importante, piora dos sintomas ou dúvida sobre interação, procure atendimento profissional.</li>
+        </ul>
+      </section>
+
+      <a class="botao-primario" href="analise.html">⌕ Consultar outro medicamento</a>
+      <p class="nota-seguranca">ⓘ <span>Conteúdo educativo e demonstrativo. Não é diagnóstico, prescrição nem substitui avaliação de um profissional de saúde.</span></p>
+    </div>
+
+    <nav class="navegacao-inferior" aria-label="Navegação principal">
+      <a class="link-navegacao" href="index.html"><span class="icone-nav">⌂</span><span>Início</span></a>
+      <a class="link-navegacao ativo" href="analise.html"><span class="icone-nav">⌕</span><span>Analisar</span></a>
+      <a class="link-navegacao" href="verificar.html"><span class="icone-nav">✓</span><span>Rotina</span></a>
+      <a class="link-navegacao" href="ajuda.html"><span class="icone-nav">ⓘ</span><span>Ajuda</span></a>
+    </nav>
+  </main>
+  <script src="js/script.js"></script>
+</body>
+</html>

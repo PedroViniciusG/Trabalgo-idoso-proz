@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#2457e6">
+  <title>Hora Certa - Login</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-pagina="login">
+  <main class="login-shell">
+    <section class="login-painel" aria-labelledby="titulo-login">
+      <div class="login-marca" aria-label="Hora Certa">
+        <span class="marca-icone">✚</span>
+        <span class="marca-texto"><small>MEDICAÇÃO</small><strong>Hora Certa</strong></span>
+      </div>
+
+      <div class="login-ilustracao" aria-hidden="true">
+        <span class="login-pilula"><i></i><i></i></span>
+      </div>
+
+      <div class="login-cabecalho">
+        <span class="tag">AREA DE ACESSO</span>
+        <h1 id="titulo-login">Bem-vindo ao Hora Certa</h1>
+        <p class="texto-suave">Entre para acessar a consulta de medicamentos e sua rotina.</p>
+      </div>
+
+      <form id="formulario-login" class="login-formulario" novalidate>
+        <div class="grupo-login">
+          <label for="email-login">E-mail</label>
+          <input class="campo" id="email-login" name="email" type="email" placeholder="exemplo@email.com" autocomplete="email" required>
+        </div>
+
+        <div class="grupo-login">
+          <label for="senha-login">Senha</label>
+          <div class="campo-senha-wrap">
+            <input class="campo" id="senha-login" name="senha" type="password" placeholder="Digite sua senha" minlength="4" autocomplete="current-password" required>
+            <button class="botao-ver-senha" id="botao-ver-senha" type="button" aria-label="Mostrar senha">◉</button>
+          </div>
+        </div>
+
+        <button class="botao-primario" type="submit">Entrar</button>
+        <p class="mensagem-feedback" id="feedback-login" aria-live="polite"></p>
+      </form>
+  </main>
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#2457e6">
+  <title>Hora Certa - Início</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<main class="app-shell" id="pagina-inicio">
+    <div class="app-conteudo">
+      <div class="marca-topo">
+        <a class="marca" href="index.html" aria-label="Hora Certa - Início">
+          <span class="marca-icone">✚</span>
+          <span class="marca-texto"><small>MEDICAÇÃO</small><strong>Hora Certa</strong></span>
+        </a>
+        <button class="avatar avatar-botao" id="botao-sair" data-acao="sair" type="button" title="Sair da conta" aria-label="Sair da conta">HC</button>
+      </div>
+
+      <section class="hero">
+        <div class="hero-conteudo">
+          <span class="etiqueta">● Olá, <span id="usuario-nome">usuário</span></span>
+          <div class="pill-art" aria-hidden="true"><span></span><span></span></div>
+          <h1>Entenda seus medicamentos com mais clareza.</h1>
+          <p>Consulte informações básicas, revise sua rotina e mantenha cuidados importantes sempre por perto.</p>
+          <a class="botao-primario" href="analise.html" style="background:#fff;color:#2457e6;box-shadow:none;">⌕ Analisar medicamento</a>
+        </div>
+      </section>
+
+      <h2>O que você deseja fazer?</h2>
+      <div class="grade-acoes">
+        <a class="acao-card" href="analise.html">
+          <span class="icone-circular">⌕</span>
+          <h3>Analisar</h3>
+          <p>Digite o nome de um medicamento e veja um resumo.</p>
+        </a>
+        <a class="acao-card" href="verificar.html">
+          <span class="icone-circular">✓</span>
+          <h3>Minha rotina</h3>
+          <p>Revise hábitos que ajudam a evitar esquecimentos.</p>
+        </a>
+      </div>
+
+      <section class="cartao proximo-remedio" aria-labelledby="proxima-dose">
+        <div class="proximo-topo">
+          <div>
+            <span class="tag">DEMONSTRAÇÃO</span>
+            <h2 id="proxima-dose" style="margin-top:12px;">Próximo medicamento</h2>
+            <p class="texto-suave texto-pequeno" style="margin-bottom:4px;">Losartana Potássica • conforme prescrição</p>
+          </div>
+          <div class="horario-destaque">20:00</div>
+        </div>
+        <hr class="divisor">
+        <button class="botao-secundario" id="botao-marcar-tomado" type="button">✓ Marcar como tomado</button>
+      </section>
+
+      <section class="bloco-info">
+        <h2>Antes de tomar qualquer medicamento</h2>
+        <ul class="lista-limpa texto-pequeno texto-suave">
+          <li>✓ Confira o nome e a apresentação do produto.</li>
+          <li>✓ Siga a prescrição ou a bula.</li>
+          <li>✓ Em caso de dúvida, procure um farmacêutico ou médico.</li>
+        </ul>
+      </section>
+    </div>
+
+    <nav class="navegacao-inferior" aria-label="Navegação principal">
+      <a class="link-navegacao ativo" href="index.html"><span class="icone-nav">⌂</span><span>Início</span></a>
+      <a class="link-navegacao" href="analise.html"><span class="icone-nav">⌕</span><span>Analisar</span></a>
+      <a class="link-navegacao" href="verificar.html"><span class="icone-nav">✓</span><span>Rotina</span></a>
+      <a class="link-navegacao" href="ajuda.html"><span class="icone-nav">ⓘ</span><span>Ajuda</span></a>
+    </nav>
+  </main>
+  <script src="js/script.js"></script>
+</body>
+</html>

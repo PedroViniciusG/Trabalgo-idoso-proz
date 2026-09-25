@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#2457e6">
+  <title>Hora Certa - Ajuda</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="app-shell" id="pagina-ajuda">
+    <div class="app-conteudo">
+      <header class="topo-pagina">
+        <button class="botao-voltar" data-acao="voltar" type="button" aria-label="Voltar">←</button>
+        <div><p class="texto-suave texto-pequeno" style="margin:0;">Suporte</p><h1>Central de ajuda</h1></div>
+        <button class="botao-sair-topo" data-acao="sair" type="button" aria-label="Sair da conta">Sair</button>
+      </header>
+
+      <section class="bloco-emergencia">
+        <span class="tag">EMERGÊNCIA</span>
+        <h2 style="margin-top:12px;">Precisa de atendimento agora?</h2>
+        <p class="texto-suave texto-pequeno">Em situações graves ou com risco imediato, procure o serviço de emergência. No Brasil, o SAMU atende pelo 192.</p>
+        <a class="botao-perigo" id="botao-emergencia" href="tel:192">☎ Ligar para o SAMU 192</a>
+      </section>
+
+      <section class="cartao" style="margin-top:18px;">
+        <h2>Dúvidas frequentes</h2>
+        <div class="acordeao">
+          <details>
+            <summary>Posso confiar totalmente na análise do site?</summary>
+            <p>Não. O conteúdo é educativo e demonstrativo. Para decisões de tratamento, use a prescrição, a bula oficial e a orientação de um profissional de saúde.</p>
+          </details>
+          <details>
+            <summary>O que fazer se eu esquecer uma dose?</summary>
+            <p>A conduta depende do medicamento. Consulte a bula específica ou peça orientação a um médico ou farmacêutico. Evite dobrar a dose sem instrução.</p>
+          </details>
+          <details>
+            <summary>Posso misturar dois medicamentos?</summary>
+            <p>Alguns medicamentos interagem entre si. Antes de combinar produtos, principalmente se forem de uso contínuo, confirme com um profissional de saúde.</p>
+          </details>
+        </div>
+      </section>
+
+      <section style="margin-top:22px;">
+        <h2>Atalhos úteis</h2>
+        <div class="lista-ajuda">
+          <a class="link-artigo" href="analise.html"><span><strong>Consultar um medicamento</strong><br><small class="texto-suave">Abrir análise rápida</small></span><span>›</span></a>
+          <a class="link-artigo" href="verificar.html"><span><strong>Revisar minha rotina</strong><br><small class="texto-suave">Checklist de organização</small></span><span>›</span></a>
+        </div>
+      </section>
+    </div>
+
+    <nav class="navegacao-inferior" aria-label="Navegação principal">
+      <a class="link-navegacao" href="index.html"><span class="icone-nav">⌂</span><span>Início</span></a>
+      <a class="link-navegacao" href="analise.html"><span class="icone-nav">⌕</span><span>Analisar</span></a>
+      <a class="link-navegacao" href="verificar.html"><span class="icone-nav">✓</span><span>Rotina</span></a>
+      <a class="link-navegacao ativo" href="ajuda.html"><span class="icone-nav">ⓘ</span><span>Ajuda</span></a>
+    </nav>
+  </main>
+  <script src="js/script.js"></script>
+</body>
+</html>

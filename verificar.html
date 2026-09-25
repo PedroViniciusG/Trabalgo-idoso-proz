@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#2457e6">
+  <title>Hora Certa - Minha Rotina</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="app-shell" id="pagina-verificar">
+    <div class="app-conteudo">
+      <header class="topo-pagina">
+        <button class="botao-voltar" data-acao="voltar" type="button" aria-label="Voltar">←</button>
+        <div><p class="texto-suave texto-pequeno" style="margin:0;">Organização</p><h1>Minha rotina</h1></div>
+        <button class="botao-sair-topo" data-acao="sair" type="button" aria-label="Sair da conta">Sair</button>
+      </header>
+
+      <section class="bloco-info">
+        <span class="tag">CHECKLIST</span>
+        <h2 style="margin-top:12px;">Sua rotina está fácil de acompanhar?</h2>
+        <p class="texto-suave texto-pequeno" style="margin-bottom:0;">Marque as situações que acontecem com você. O resultado serve apenas como orientação de organização.</p>
+      </section>
+
+      <form id="formulario-rotina">
+        <div class="opcoes-perfil">
+          <label class="cartao opcao-perfil"><input type="checkbox"><span>Uso vários medicamentos em horários diferentes.</span></label>
+          <label class="cartao opcao-perfil"><input type="checkbox"><span>Às vezes esqueço se já tomei uma dose.</span></label>
+          <label class="cartao opcao-perfil"><input type="checkbox"><span>Tenho dificuldade para lembrar o nome ou a função de alguns medicamentos.</span></label>
+          <label class="cartao opcao-perfil"><input type="checkbox"><span>Mais de uma pessoa participa do meu cuidado ou organiza meus remédios.</span></label>
+          <label class="cartao opcao-perfil"><input type="checkbox"><span>Minhas prescrições mudaram recentemente e ainda estou me adaptando.</span></label>
+        </div>
+        <button class="botao-primario" type="submit">✓ Ver resultado da rotina</button>
+        <div class="resultado-perfil" id="resultado-rotina" aria-live="polite"></div>
+      </form>
+
+      <section class="cartao" style="margin-top:18px;">
+        <h2>Uma dica simples</h2>
+        <p class="texto-suave texto-pequeno" style="margin-bottom:0;">Mantenha uma lista atualizada com nome, dose prescrita, horário e motivo de cada medicamento. Leve essa lista às consultas.</p>
+      </section>
+    </div>
+
+    <nav class="navegacao-inferior" aria-label="Navegação principal">
+      <a class="link-navegacao" href="index.html"><span class="icone-nav">⌂</span><span>Início</span></a>
+      <a class="link-navegacao" href="analise.html"><span class="icone-nav">⌕</span><span>Analisar</span></a>
+      <a class="link-navegacao ativo" href="verificar.html"><span class="icone-nav">✓</span><span>Rotina</span></a>
+      <a class="link-navegacao" href="ajuda.html"><span class="icone-nav">ⓘ</span><span>Ajuda</span></a>
+    </nav>
+  </main>
+  <script src="js/script.js"></script>
+</body>
+</html>
